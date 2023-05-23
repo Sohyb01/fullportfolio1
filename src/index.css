@@ -59,3 +59,33 @@ ul {
 .bold {
   font-weight: bold;
 }
+
+
+/* SECTIONS STYLING ---------------------*/
+
+/* NAVIGATION */
+.section--navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.nav-logo{
+  background-image: url(../Images/Logo.png);
+  background-size: contain;
+  height: 43px;
+  width: 109px;
+}
+.nav-menu-icon{
+  background-image: url(../Images/bars.svg);
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+}
+
+
+/* HERO */
+.section--hero-content{
+  text-align: center;
+}
