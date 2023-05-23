@@ -49,7 +49,9 @@ ul {
   --fs-49: 3.062rem
   --fs-61: 3.812rem
 }
-
+.container-all{
+  padding: 0px 20px;
+}
 /* REUSABLE CLASSES AND SUCH */
 .red {
   color: var(--style-red);
