@@ -11,6 +11,7 @@ body {
   line-height: 170%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
 }
 *,
 *::before,
@@ -39,17 +40,17 @@ ul {
   --style-brown: #790404;
 
   /* FONT SIZES IN REM */
-  --fs-10: 0.625rem
-  --fs-13: 0.812rem
-  --fs-16: 1rem
-  --fs-20: 1.25rem
-  --fs-25: 1.562rem
-  --fs-31: 1.938rem
-  --fs-39: 2.438rem
-  --fs-49: 3.062rem
-  --fs-61: 3.812rem
+  --fs-10: 0.625rem;
+  --fs-13: 0.812rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-25: 1.562rem;
+  --fs-31: 1.938rem;
+  --fs-39: 2.438rem;
+  --fs-49: 3.062rem;
+  --fs-61: 3.812rem;
 }
-.container-all{
+.container-all {
   padding: 0px 20px;
 }
 /* REUSABLE CLASSES AND SUCH */
@@ -59,33 +60,87 @@ ul {
 .bold {
   font-weight: bold;
 }
-
-
+.btn {
+  padding: 6px 20px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+.white-button {
+  color: var(--style-red);
+  background: white;
+}
+.red-button {
+  color: white;
+  background: var(--style-red);
+}
 /* SECTIONS STYLING ---------------------*/
 
 /* NAVIGATION */
-.section--navigation{
+.section--navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0px;
   align-items: center;
 }
-.nav-logo{
+.nav-logo {
   background-image: url(../Images/Logo.png);
   background-size: contain;
   height: 43px;
   width: 109px;
 }
-.nav-menu-icon{
+.nav-menu-icon {
   background-image: url(../Images/bars.svg);
   background-size: contain;
   height: 30px;
   width: 30px;
 }
 
-
 /* HERO */
-.section--hero-content{
+.section--hero {
+  padding-top: 20px;
+  font-size: var(--fs-20);
+}
+.section--hero-content {
   text-align: center;
+}
+.section--hero-buttons {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.section--hero-image-and-socials {
+  display: flex;
+  gap: 17px;
+  flex-direction: row;
+}
+.section--hero-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.socials-button {
+  aspect-ratio: 1;
+  width: 50px;
+  background-size: contain;
+}
+.github {
+  background-image: url(../Images/github.png);
+}
+.linkedin {
+  background-image: url(../Images/linkedin.png);
+}
+.instagram {
+  background-image: url(../Images/instagram2.png);
+}
+.section--hero-image {
+  background-image: url(../Images/image_container.png);
+  width: 171px;
+  height: 226px;
+  background-size: contain;
 }

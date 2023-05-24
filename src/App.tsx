@@ -9,6 +9,7 @@ function App() {
           <div className="nav-list"></div>
           <div className="nav-menu-icon"></div>
         </section>
+
         <section className="section--hero">
           <div className="section--hero-content">
             <h1 className="bold">
@@ -16,6 +17,18 @@ function App() {
               <span className="red"> Front-End Developer </span>based in
               Alexandria, Egypt.
             </h1>
+            <div className="section--hero-buttons">
+              <button className="btn white-button">Projects</button>
+              <button className="btn red-button">Contact</button>
+            </div>
+            <div className="section--hero-image-and-socials">
+              <div className="section--hero-socials">
+                <div className="socials-button github"></div>
+                <div className="socials-button linkedin"></div>
+                <div className="socials-button instagram"></div>
+              </div>
+              <div className="section--hero-image"></div>
+            </div>
           </div>
         </section>
 
