@@ -188,6 +188,7 @@ section > h1 {
   background-size: contain;
 }
 .skill-name {
+  margin-top: 10px;
   font-size: var(--fs-16);
 }
 .html {
@@ -253,5 +254,45 @@ section > h1 {
   }
   .skill-name {
     font-size: var(--fs-25);
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .container-all {
+    padding: 0px 80px;
+  }
+  section h1 {
+    font-size: var(--fs-25);
+  }
+  .section--hero {
+    gap: 80px;
+  }
+  .section--hero-content {
+    font-size: var(--fs-25);
+    line-height: 170%;
+  }
+  .section--hero-buttons {
+    font-size: var(--fs-20);
+  }
+  .section--hero-buttons button {
+    line-height: 170%;
+    padding: 10px 30px;
+  }
+  .section--hero-image {
+    width: 256px;
+    height: 338px;
+  }
+  .socials-button {
+    height: 76px;
+    width: 76px;
+  }
+  .section--skills-skills-container {
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section--hero-content {
+    font-size: var(--fs-31);
   }
 }
