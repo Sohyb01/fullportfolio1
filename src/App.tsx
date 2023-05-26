@@ -21,14 +21,14 @@ function App() {
               <button className="btn white-button">Projects</button>
               <button className="btn red-button">Contact</button>
             </div>
-            <div className="section--hero-image-and-socials">
-              <div className="section--hero-socials">
-                <div className="socials-button github"></div>
-                <div className="socials-button linkedin"></div>
-                <div className="socials-button instagram"></div>
-              </div>
-              <div className="section--hero-image"></div>
+          </div>
+          <div className="section--hero-image-and-socials">
+            <div className="section--hero-socials">
+              <div className="socials-button github"></div>
+              <div className="socials-button linkedin"></div>
+              <div className="socials-button instagram"></div>
             </div>
+            <div className="section--hero-image"></div>
           </div>
         </section>
 
@@ -36,6 +36,32 @@ function App() {
           <h1 className="bold">
             Relevant <span className="red">Skills & Technologies</span>
           </h1>
+          <div className="section--skills-skills-container">
+            <div className="skill">
+              <div className="skill-icon html"></div>
+              <div className="skill-name">HTML</div>
+            </div>
+            <div className="skill">
+              <div className="skill-icon css"></div>
+              <div className="skill-name">CSS</div>
+            </div>
+            <div className="skill">
+              <div className="skill-icon javascript"></div>
+              <div className="skill-name">Javascript</div>
+            </div>
+            <div className="skill">
+              <div className="skill-icon react"></div>
+              <div className="skill-name">ReactJS</div>
+            </div>
+            <div className="skill">
+              <div className="skill-icon typescript"></div>
+              <div className="skill-name">Typescript</div>
+            </div>
+            <div className="skill">
+              <div className="skill-icon git-github"></div>
+              <div className="skill-name">Git & Github</div>
+            </div>
+          </div>
         </section>
 
         <section className="section--projects">

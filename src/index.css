@@ -32,7 +32,7 @@ ul {
 
 /* CUSTOM PROJECT VARIABLES */
 :root {
-  --section-margin: 40px;
+  --section-margin: 80px;
 
   --style-red: #ff2222;
   --style-lightgray: #d2d2d2;
@@ -76,7 +76,14 @@ ul {
   color: white;
   background: var(--style-red);
 }
+
 /* SECTIONS STYLING ---------------------*/
+section + section {
+  margin-top: var(--section-margin);
+}
+section > h1 {
+  text-align: center;
+}
 
 /* NAVIGATION */
 .section--navigation {
@@ -103,6 +110,7 @@ ul {
 .section--hero {
   padding-top: 20px;
   font-size: var(--fs-20);
+  margin-top: 0px;
 }
 .section--hero-content {
   text-align: center;
@@ -115,11 +123,14 @@ ul {
   gap: 20px;
 }
 .section--hero-image-and-socials {
+  margin-top: 40px;
   display: flex;
+  justify-content: center;
   gap: 17px;
   flex-direction: row;
 }
 .section--hero-socials {
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -128,6 +139,8 @@ ul {
   aspect-ratio: 1;
   width: 50px;
   background-size: contain;
+  border: 3.5px solid #790404;
+  border-radius: 35%;
 }
 .github {
   background-image: url(../Images/github.png);
@@ -141,6 +154,104 @@ ul {
 .section--hero-image {
   background-image: url(../Images/image_container.png);
   width: 171px;
-  height: 226px;
+  aspect-ratio: 171/226;
   background-size: contain;
+}
+
+/* SKILLS SECTION------- */
+.section--skills {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section--skills-skills-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  max-width: 400px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-icon {
+  aspect-ratio: 1;
+  height: 64px;
+  width: 64px;
+  background-size: contain;
+}
+.skill-name {
+  font-size: var(--fs-16);
+}
+.html {
+  background-image: url(../Images/html-5.png);
+}
+.react {
+  background-image: url(../Images/react.png);
+}
+.css {
+  background-image: url(../Images/css-3.png);
+}
+.javascript {
+  background-image: url(../Images/js.png);
+}
+.typescript {
+  background-image: url(../Images/typescript.png);
+}
+.git-github {
+  background-image: url(../Images/github.png);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 478px) {
+  .section--hero-image {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container-all {
+    padding: 0px 40px;
+  }
+  /* HERO SECTION */
+  .section--hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+  }
+  .section--hero-content {
+    text-align: left;
+    max-width: calc(50% - 20px);
+  }
+  .section--hero-buttons {
+    justify-content: start;
+    margin-top: 40px;
+    gap: 40px;
+  }
+  .section--hero-image-and-socials {
+    margin-top: 0px;
+  }
+
+  /* SKILLS SECTION */
+  .section--skills-skills-container {
+    margin-top: 40px;
+    gap: 50px;
+    max-width: 550px;
+  }
+  .skill-icon {
+    width: 96px;
+    height: 96px;
+  }
+  .skill-name {
+    font-size: var(--fs-25);
+  }
 }
