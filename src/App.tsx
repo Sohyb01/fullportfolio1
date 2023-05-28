@@ -5,18 +5,34 @@ function App() {
     <div className="App">
       <main className="container-all">
         <section className="section--navigation">
-          <div className="nav-logo"></div>
-          <div className="nav-list"></div>
+          <a href="#hero" className="nav-logo">
+            {" "}
+          </a>
+          <div className="nav-list">
+            <a href="#skills" className="nav-link bold">
+              Skills
+            </a>
+            <a href="#projects" className="nav-link bold">
+              Projects
+            </a>
+            <a href="#aboutme" className="nav-link bold">
+              About me
+            </a>
+            <a href="#contact" className="nav-link contact bold">
+              Contact Me
+            </a>
+          </div>
           <div className="nav-menu-icon"></div>
         </section>
 
-        <section className="section--hero">
+        <section className="section--hero" id="hero">
           <div className="section--hero-content">
-            <h1 className="bold">
-              Hello! My name is Sohyb, I am a
-              <span className="red"> Front-End Developer </span>based in
-              Alexandria, Egypt.
-            </h1>
+            <p className="bold">
+              <span className="red">Welcome! </span> My name is Sohyb Mansour,
+              and I'm a passionate{" "}
+              <span className="red">Front-End Developer </span> who is always
+              looking to learn and improve
+            </p>
             <div className="section--hero-buttons">
               <button className="btn white-button">Projects</button>
               <button className="btn red-button">Contact</button>
@@ -32,7 +48,7 @@ function App() {
           </div>
         </section>
 
-        <section className="section--skills">
+        <section className="section--skills" id="skills">
           <h1 className="bold">
             Relevant <span className="red">Skills & Technologies</span>
           </h1>
@@ -64,13 +80,13 @@ function App() {
           </div>
         </section>
 
-        <section className="section--projects">
+        <section className="section--projects" id="projects">
           <h1 className="bold">
             <span className="red">Projects</span> by me
           </h1>
         </section>
 
-        <section className="section--aboutme">
+        <section className="section--aboutme" id="aboutme">
           <h1 className="bold">
             More <span className="red">About Me</span>
           </h1>

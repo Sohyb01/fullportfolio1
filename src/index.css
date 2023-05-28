@@ -29,6 +29,9 @@ ol,
 ul {
   list-style: none;
 }
+section {
+  margin-inline: auto;
+}
 
 /* CUSTOM PROJECT VARIABLES */
 :root {
@@ -92,6 +95,7 @@ section > h1 {
   justify-content: space-between;
   padding: 20px 0px;
   align-items: center;
+  max-width: none;
 }
 .nav-logo {
   background-image: url(../Images/Logo.png);
@@ -110,6 +114,7 @@ section > h1 {
 .section--hero {
   padding-top: 20px;
   font-size: var(--fs-20);
+  line-height: 170%;
   margin-top: 0px;
 }
 .section--hero-content {
@@ -215,11 +220,17 @@ section > h1 {
   .section--hero-image {
     width: 180px;
   }
+  section {
+    max-width: 418px;
+  }
 }
 
 @media screen and (min-width: 767px) {
   .container-all {
     padding: 0px 40px;
+  }
+  section {
+    max-width: 686px;
   }
   /* HERO SECTION */
   .section--hero {
@@ -258,6 +269,9 @@ section > h1 {
 }
 
 @media screen and (min-width: 990px) {
+  section {
+    max-width: 829px;
+  }
   .container-all {
     padding: 0px 80px;
   }
@@ -290,9 +304,47 @@ section > h1 {
     gap: 60px;
   }
 }
-
+@media screen and (max-width: 1440px) {
+  .nav-list {
+    display: none;
+  }
+}
 @media screen and (min-width: 1440px) {
+  section {
+    max-width: 1100px;
+  }
+  .nav-menu-icon {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: black;
+  }
+  .contact {
+    color: #ff2222;
+  }
+  section > h1 {
+    font-size: var(--fs-31);
+    text-align: left;
+  }
+
   .section--hero-content {
     font-size: var(--fs-31);
+    max-width: 640px;
+  }
+  .section--hero-buttons {
+    font-size: var(--fs-25);
+    margin-top: 80px;
+  }
+  .section--skills-skills-container {
+    max-width: 100%;
+  }
+  .skill-icon {
+    height: 128px;
+    width: 128px;
   }
 }
