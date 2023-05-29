@@ -34,15 +34,23 @@ function App() {
               looking to learn and improve
             </p>
             <div className="section--hero-buttons">
-              <button className="btn white-button">Projects</button>
+              <a href="#projects">
+                <button className="btn white-button">Projects</button>
+              </a>
               <button className="btn red-button">Contact</button>
             </div>
           </div>
           <div className="section--hero-image-and-socials">
             <div className="section--hero-socials">
-              <div className="socials-button github"></div>
-              <div className="socials-button linkedin"></div>
-              <div className="socials-button instagram"></div>
+              <a href="https://github.com/Sohyb01">
+                <div className="socials-button github"></div>
+              </a>
+              <a href="https://www.linkedin.com/in/sohyb-mansour-b237961ba/">
+                <div className="socials-button linkedin"></div>
+              </a>
+              <a href="https://www.instagram.com/sohyb_imm/">
+                <div className="socials-button instagram"></div>
+              </a>
             </div>
             <div className="section--hero-image"></div>
           </div>
@@ -88,15 +96,33 @@ function App() {
             <div className="project-card">
               <div className="project-img"></div>
               <div className="project-card-content">
-                Project name lorem ipsum dolor sit amet, confiscing alet. lorem
-                ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+                <p className="project-description">
+                  ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+                  Project name lorem ipsum dolor sit amet, confiscing alet.
+                  lorem
+                </p>
+                <button className="btn white-button">
+                  View Working Project
+                </button>
+                <button className="btn black-button">
+                  View Code on Github
+                </button>
               </div>
             </div>
             <div className="project-card">
               <div className="project-img"></div>
               <div className="project-card-content">
-                Project name lorem ipsum dolor sit amet, confiscing alet. lorem
-                ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+                <p className="project-description">
+                  ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+                  Project name lorem ipsum dolor sit amet, confiscing alet.
+                  lorem
+                </p>
+                <button className="btn white-button">
+                  View Working Project
+                </button>
+                <button className="btn black-button">
+                  View Code on Github
+                </button>
               </div>
             </div>
           </div>
