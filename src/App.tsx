@@ -84,12 +84,47 @@ function App() {
           <h1 className="bold">
             <span className="red">Projects</span> by me
           </h1>
+          <div className="section--projects-projects-container">
+            <div className="project-card">
+              <div className="project-img"></div>
+              <div className="project-card-content">
+                Project name lorem ipsum dolor sit amet, confiscing alet. lorem
+                ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+              </div>
+            </div>
+            <div className="project-card">
+              <div className="project-img"></div>
+              <div className="project-card-content">
+                Project name lorem ipsum dolor sit amet, confiscing alet. lorem
+                ipsum dolor sit amet, confiscing alet. ipsum sit amet, alet.
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className="section--aboutme" id="aboutme">
           <h1 className="bold">
             More <span className="red">About Me</span>
           </h1>
+          <p>
+            <span className="bold">As a web developer,</span> I specialize in
+            transforming designs into custom websites or web applications that
+            meet user requirements using the latest technologies and meeting
+            industry standards.{" "}
+            <span className="bold">
+              {" "}
+              I bring your ideas to <span className="red">life </span>for the
+              world to see!
+            </span>
+            🥷🌸
+          </p>
+          <p>
+            My most prominent traits are honesty, humility, and always trying to
+            improve. Other than coding, I enjoy weightlifting, calisthenics,
+            chess, browsing the internet, learning new skills, and spending time
+            with friends.
+          </p>
+          <div className="section--aboutme-img"></div>
         </section>
       </main>
     </div>

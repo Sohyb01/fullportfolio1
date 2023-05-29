@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  line-height: 170%;
 }
 body {
-  line-height: 170%;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -215,6 +214,40 @@ section > h1 {
   background-image: url(../Images/github.png);
 }
 
+/* ABOUT ME */
+.section--aboutme p {
+  font-size: var(--fs-16);
+  margin-top: 20px;
+}
+.section--aboutme-img {
+  background: #555;
+  height: 380px;
+  width: 100%;
+  margin-top: 20px;
+}
+/* PROJECTS SECTION */
+.section--projects-projects-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: var(--fs-16);
+}
+.project-card {
+  max-width: 300px;
+  box-shadow: 5px 5px 4px rgb(156, 156, 156);
+}
+.project-img {
+  background: #d9d9d9;
+  height: 250px;
+  width: 100%;
+}
+.project-card-content {
+  padding: 10px 10px 20px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 478px) {
   .section--hero-image {
@@ -303,6 +336,9 @@ section > h1 {
   .section--skills-skills-container {
     gap: 60px;
   }
+  .section--aboutme p {
+    font-size: var(--fs-20);
+  }
 }
 @media screen and (max-width: 1440px) {
   .nav-list {
@@ -329,7 +365,6 @@ section > h1 {
   }
   section > h1 {
     font-size: var(--fs-31);
-    text-align: left;
   }
 
   .section--hero-content {
@@ -346,5 +381,8 @@ section > h1 {
   .skill-icon {
     height: 128px;
     width: 128px;
+  }
+  .section--aboutme p {
+    font-size: var(--fs-25);
   }
 }
