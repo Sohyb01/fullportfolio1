@@ -153,6 +153,29 @@ function App() {
           <div className="section--aboutme-img"></div>
         </section>
       </main>
+      <section className="section--contact" id="contact">
+        <h1>Get in touch with me!</h1>
+        <form className="contact-form" method="post">
+          <div className="name-input">
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div className="email-input">
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div className="message-input">
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button className="btn red-button" type="submit">
+            SUBMIT
+          </button>
+        </form>
+      </section>
     </div>
   );
 }
